@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gamblers",
+  "info": {
+    "name": "Gambler",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "telefone": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "gambler_tickets": {
+      "via": "gambler",
+      "collection": "tickets"
+    }
+  }
+}

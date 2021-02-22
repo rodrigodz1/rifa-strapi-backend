@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rifas",
+  "info": {
+    "name": "rifa",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "rifa_tickets": {
+      "via": "rifa",
+      "collection": "tickets"
+    }
+  }
+}

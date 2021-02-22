@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tickets",
+  "info": {
+    "name": "tickets",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "available",
+        "reserved",
+        "paid"
+      ],
+      "default": "available",
+      "required": true
+    },
+    "number": {
+      "type": "integer",
+      "required": true,
+      "unique": true,
+      "max": 999,
+      "min": 0
+    },
+    "rifa": {
+      "model": "rifa",
+      "via": "rifa_tickets"
+    },
+    "gambler": {
+      "model": "gambler",
+      "via": "gambler_tickets"
+    }
+  }
+}
