@@ -29,12 +29,12 @@
       "min": 0
     },
     "rifa": {
-      "model": "rifa",
-      "via": "rifa_tickets"
+      "via": "rifa_tickets",
+      "model": "rifa"
     },
     "gambler": {
-      "model": "gambler",
-      "via": "gambler_tickets"
+      "via": "gambler_tickets",
+      "model": "gambler"
     }
   }
 }
