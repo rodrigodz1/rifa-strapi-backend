@@ -24,17 +24,17 @@
     "number": {
       "type": "integer",
       "required": true,
-      "unique": true,
+      "unique": false,
       "max": 999,
       "min": 0
     },
     "rifa": {
-      "via": "rifa_tickets",
-      "model": "rifa"
+      "model": "rifa",
+      "via": "rifa_tickets"
     },
     "gambler": {
-      "via": "gambler_tickets",
-      "model": "gambler"
+      "model": "gambler",
+      "via": "gambler_tickets"
     }
   }
 }

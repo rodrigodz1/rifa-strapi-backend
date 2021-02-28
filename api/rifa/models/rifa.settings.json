@@ -28,8 +28,8 @@
       "required": true
     },
     "rifa_tickets": {
-      "collection": "tickets",
-      "via": "rifa"
+      "via": "rifa",
+      "collection": "tickets"
     }
   }
 }
