@@ -28,8 +28,16 @@
       "required": true
     },
     "rifa_tickets": {
-      "via": "rifa",
-      "collection": "tickets"
+      "collection": "tickets",
+      "via": "rifa"
+    },
+    "ticket_price": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
     }
   }
 }
