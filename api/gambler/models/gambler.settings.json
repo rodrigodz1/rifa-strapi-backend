@@ -20,12 +20,11 @@
       "type": "string",
       "required": true,
       "unique": true,
-      "maxLength": 12,
       "minLength": 8
     },
     "gambler_tickets": {
-      "via": "gambler",
-      "collection": "tickets"
+      "collection": "tickets",
+      "via": "gambler"
     }
   }
 }
